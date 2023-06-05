@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+html{
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 9999;
+    transition: 0.6s;
+}
+header .brand{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    color: #FFFFFF;
+    transition: 0.6s;
+    text-shadow: 3px 2px 1px black;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: 3px 2px 1px black;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+header.sticky{
+    padding: 3px 100px;
+    background-color: rgba(171, 161, 145, 0.15);
+    backdrop-filter: blur(5px);   
+}
+.bg-img{
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url("/img/spacejoy-RqO6kwm4tZY-unsplash.jpg");
+    filter: blur(1px);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.rectangle{
+    height: 21px;
+    background-color: #ABA191;
+}
+.section-1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section-1 h1{
+    width: 700px;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    font-size: 58px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.section-1 p{
+    width: 884px;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #F5F5F5;
+}
+.line{
+    width: 925px;
+    border: 1px solid #FFFFFF;
+}
+.section-2{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.sc-2 .text h1{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 105px;
+}
+.child-row .logo{
+    display: flex;
+    align-items: center;
+}
+.child-row .text{
+    display: flex;
+    flex-direction: column;
+}
+.child-row .text h1{
+    margin-bottom: 0;
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+    font-size: 45px;
+}
+.child-row .text p{
+    margin-top: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.section-3{
+    height: 120vh;
+}
+.sc-3 .text{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 43px;
+}
+.sc-3 .button .btn-order{
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ABA191;
+    border: none;
+}
+.sc-3 .button .btn-order a{
+    color: black;
+    text-decoration: none;
+}
+
+.sc-3-2{
+    display: flex;
+    justify-content: center;
+}
+.sc-3-2 .imgtxt h3{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110px;
+    text-decoration: underline;
+}
+.sc-3-2 .card{
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 519px;
+    height: 329px;
+}
+.sc-3-2 .text-img{
+    top:243px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 94px;
+    background: rgba(0, 0, 0, 0.35);
+}
+.sc-3-2 .text-img .text{
+    display: flex;
+    flex-direction: column;
+}
+.sc-3-2 .text-img .text h5{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+.sc-3-2 .text-img .text p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    margin-top: 0; 
+}
+.sc-3-2 .imgtxt-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sc-3-2 .imgtxt-2 p{
+    width: 50%;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 0;
+    margin-left: 40px; 
+}
+.sc-3-2 .imgtxt-2 .card{
+    width: 30%;
+}
+.sc-3-2 .imgtxt-2 .card img{
+    width: 100%;
+    height: 60vh;
+}
+.sc-3-2 .imgtxt-2 .text-img{
+    top:308px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height: 94px;
+    background: rgba(0, 0, 0, 0.35);
+}
+.section-4{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.section-4 .sc-4 .text p{
+    width: 100%;
+    text-align: center;
+}
+.section-4 .sc-4 .text h3{
+    width: 100%;
+    text-align: center;
+}
+
+.sc-4 .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+}
+.sc-4 .text h3{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    text-align: right;
+}
+.sc-4 .text p{
+    font-family: 'Quicksand';
+    width: 700px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 47px;
+    text-align: right;
+}
+.footer{
+    height: 49vh;
+    border-top: 1px solid #ABA191;
+    background-color: #454545;
+    display: flex;
+    align-items: center;
+}
+.container-footer{
+    width: 1440px;
+    margin: 0 auto;
+}
+.blok{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.kotak{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 214px;
+    background: #ABA191;
+    border-radius: 5px;
+}
+.kotak h3{
+    text-align: center;
+    font-family: 'Nunito Sans';
+    color:#FFFFFF ;
+}
+.row-footer{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.row-2{
+    display: flex;
+    text-align: left;
+}
+.row-2 h4{
+    color: #ABA191;
+    font-family: 'Quicksand';
+    font-size: 24px;
+}
+.row-2 a{
+    color: #F5F5F5;
+    font-family:'Quicksand';
+    text-decoration: none;
+    font-size: 16px;
+}
+.blok .kotak h3{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: 'Quicksand';
+}
+
+@media only screen and (max-width:576px){
+    .section-1 {
+        height: auto;
+    }
+    .section-2 {
+        height: auto;
+    }
+    .section-3 {
+        height: auto;
+    }
+    .section-4{
+        height: auto;
+    }
+    .sc-3-2 .imgtxt-2 .card{
+        width: 73%;
+    }
+    .sc-3-2 .imgtxt-2 .text-img{
+        top:280px ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.35);
+    }
+    header{
+        width: 100%;
+    }
+    /* header ul{
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        background-color: #ABA191;
+        height: 100vh;
+        top: 0;
+        justify-content: space-evenly;
+        align-items:flex-start;
+        z-index: -1; 
+    } */
+}
